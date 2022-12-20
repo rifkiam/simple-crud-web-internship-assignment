@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kiamu To Do List App</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+              spacing: {
+                '13': '3.25rem',
+                '15': '3.75rem'
+              },
+              fontFamily: {
+                inter: ['Inter']
+              },
+              scale: {
+                '120': '1.2'
+              }
+          }
+        }
+      }
+  </script>
+  </head>
+  <body>
+    <div class="h-screen w-auto bg-cover">
+      <div class="w-full h-full bg-white/75 m-auto backdrop-blur-md">
+        <div id="app"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
